@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Encryption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <input type="checkbox" id="dark-mode-toggle">
+        <label for="dark-mode-toggle">🌙 Dark Mode</label>
+    </div>
+
+    <div class="container">
+        <h2>🔐 Secure Encryption & Decryption</h2>
+
+        <div class="card">
+            <label for="plaintext">Enter Text:</label>
+            <textarea id="plaintext" placeholder="Type something..."></textarea>
+
+            <div class="button-group">
+                <button class="encrypt-btn" onclick="encrypt()">Encrypt 🔒</button>
+                <button class="decrypt-btn" onclick="decrypt()">Decrypt 🔓</button>
+            </div>
+
+            <label for="encrypted">Encrypted Text:</label>
+            <textarea id="encrypted" readonly></textarea>
+
+            <label for="decrypted">Decrypted Text:</label>
+            <textarea id="decrypted" readonly></textarea>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
